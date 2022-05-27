@@ -2,7 +2,7 @@
 -- +goose StatementBegin
 CREATE TABLE resource (
     id VARCHAR(64) NOT NULL,
-    name VARCHAR(64),
+    name VARCHAR(64) NOT NULL,
     description text,
     created_at TIMESTAMP NOT NULL DEFAULT (current_timestamp AT TIME ZONE 'UTC'),
     modified_at TIMESTAMP NOT NULL DEFAULT (current_timestamp AT TIME ZONE 'UTC'),

@@ -14,7 +14,7 @@ var embedMigrations embed.FS
 
 func main() {
 
-	var conninfo string = "host=localhost port=5432 user=postgres password=password dbname=wiz_freight sslmode=disable"
+	var conninfo string = "host=localhost port=55000 user=postgres password=postgrespw dbname=wiz sslmode=disable"
 	db, err := sql.Open("postgres", conninfo)
 	if err != nil {
 		panic(err)
